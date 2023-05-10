@@ -1,0 +1,357 @@
+body{
+    background-color: #E5E5E5;
+}
+
+.logo{
+  display: inline;
+  position: absolute;
+  width: 120px;
+  height: 48px;
+  left: 40px;
+  top: 40px;
+}
+
+.ingresarTexto{
+  position: relative;
+  top: 100px;
+  left: 240px;
+  font-size: 32px;
+  width: 600px;
+  height: 300px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #0A3871;
+}
+
+.ingresarTexto::placeholder {
+  color: #0A3871;
+}
+
+.condicion{
+  position: absolute;
+  top: 450px;
+  left: 240px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.botones{
+  position: absolute;
+  display: inline;
+  top: 480px;
+  left: 240px;
+}
+
+.botones button{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  vertical-align: top;
+  margin: 10px 12px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border: 1px solid #0A3871;
+  border-radius: 23px;
+  font-size: 18px;
+}
+
+.encriptar{
+  color: #ffffff;
+  background-color: #0A3871;
+  font-family: sans-serif;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.desencriptar{
+  color: #0A3871;
+  background-color: #D8DFE8;
+  font-family: sans-serif;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.encriptar:hover{
+  transform: scale(1.1);
+}
+
+.desencriptar:hover{
+  transform: scale(1.1);
+}
+
+.area{
+  background: white;
+  border: none;
+  border-radius: 24px;
+  margin-left: 98px;
+  margin-top: 20px;
+  position: absolute;
+  width: 350px;
+  height: 510px;
+  left: 850px;
+  top: 40px;
+  border-radius: 32px;
+  padding: 15px;
+}
+
+.textoDecodificado{
+  background-image: url("Muñeco/Muñeco.png"), url(Frame5/Frame\ 5.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom left;
+  color: #0A3871;
+  font-size: 30px;
+  width: 325px;
+  height: 422px;
+  border: none;
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+
+.textoDecodificado:focus{
+  outline: none;
+}
+
+.copiar{
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 125px;
+  margin-top: 40px;
+  position: initial;
+  width: 100px;
+  left: 990px;
+  transition: 1s all;
+}
+
+.copiar:hover{
+  transform: scale(1.1);
+}
+
+.mensajeOculto {
+  position: fixed;
+  top: 20px;
+  left: 1200px;
+  background-color: #ffffff;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mensajeVisible {
+  opacity: 1;
+}
+
+footer{
+  position: absolute;
+  background: url(footer/color.png);
+  top: 625px;
+  width: 100%;
+  height: 300px;
+}
+
+table{
+  position: relative;
+  display: inline-block;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffffff;
+  padding: 30px;
+  font-size: 25px;
+  left: 250px;
+  top: 50px;
+}
+
+thead{
+  font-size: 40px;
+}
+
+td, th{
+  padding: 8px 30px;
+}
+
+.proyecto{
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  left: 800px;
+}
+
+@media screen and (max-width:480px) {
+  header{
+    display: block;
+    width: auto;
+    height: 96px;
+  }
+
+  .logo {
+    width: auto;
+    height: auto;
+    left: 10px;
+    top: 20px;
+  }
+
+  main{
+    width: auto;
+    height: 772px;
+  }
+
+  footer {
+    top: auto;
+    width: 100%;
+    height: 300px;
+  }
+
+  table{
+    top: 20px;
+    left: auto;
+    font-size: 16px;
+  }
+
+  .ingresarTexto{
+    top: auto;
+    left: 35px;
+    width: 300px;
+    height: 354px;
+  }
+
+  .condicion{
+    top: 451px;
+    left: 35px;
+  }
+
+  .botones{
+    width: 343px;
+    height: 158px;
+    left: 16px;
+    top: 485px;
+  }
+
+  .proyecto {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 210px;
+    top: 160px;
+  }
+
+  .area{
+    position: absolute;
+    width: 327px;
+    height: 186px;
+    left: auto;
+    top: 638px;
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+
+  .textoDecodificado{
+    left: auto;
+    top: 16px;
+    height: 150px;
+    background-image: url(Frame5/Frame\ 5.png);
+  }
+
+  .copiar{
+    margin-top: 0px;
+    position: absolute;
+    left: auto;
+    top: 160px;
+  }
+
+  .mensajeOculto {
+    position: relative;
+    top: 768px;
+    left: 250px;
+    width: 95px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  header{
+    width: auto;
+    height: 240px;
+  }
+
+  .logo{
+    width: 120px;
+    height: 50px;
+    top: 73.42px;
+  }
+
+  main{
+    width: auto;
+    height: 668px;
+  }
+
+  .ingresarTexto{
+    width: 688px;
+    left: 40px;
+    top: 0px;
+  }
+
+  .condicion{
+    position: fixed;
+    top: 596px;
+    left: 40px;
+  }
+
+  .botones {
+    position: fixed;
+    top: 612px;
+    left: 70px;
+    width: 688px;
+  }
+
+  .area{
+    position: absolute;
+    width: 688px;
+    height: 133px;
+    left: 0px;
+    top: 675px;
+    margin-left: 40px;
+  }
+
+  .textoDecodificado{
+    background-image: url(Frame5/Frame\ 5.png);
+    background-position: center;
+    width: 624px;
+    height: 120px;
+    left: 32px;
+    top: 10px;
+  }
+
+  .copiar{
+    position: absolute;
+    left: 200px;
+    margin-top: 0px;
+    top: 105px;
+  }
+
+  .mensajeOculto{
+    left: 577px;
+    top: 865px;
+  }
+
+  footer{
+    position: static;
+  }
+
+  table{
+    left: 30px;
+  }
+
+  .proyecto{
+    left: 540px;
+  }
+}

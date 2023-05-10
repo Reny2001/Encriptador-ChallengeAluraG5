@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador - ChallengeG5 Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-CuCgq2WuWV1B3Iu0FukIY6F/zUJ4imUO82t/X4ArzEo2Lbj/B6e7AFk4kzP3W72dMiX28qKAIcIQ8FB3P2lB4g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="Logo/Logo.png">
+        </header>
+        <div id="mensaje" class="mensajeOculto"></div>
+        <main>
+           <section>
+                <textarea class="ingresarTexto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+                <div>
+                    <h6 class="condicion">Solo letras minusculas y sin acento</h6>
+                </div>
+                <div class="botones">
+                    <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="botonDesencriptar ()">Desencriptar</button>
+                </div>
+           </section>
+           <section class="area">
+                <textarea id="miTextarea" class="textoDecodificado" cols="30" rows="10"></textarea>
+                <div>
+                    <button class="copiar" style="display: none;" onclick="copiarTexto()">Copiar</button>
+                </div>
+           </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <td>Contacto</td>
+                    <td>Redes</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email reny2001.22@gmail.com</td>
+                    <td>
+                        <a href="https://instagram.com/_reny_2001?igshid=ZGUzMzM3NWJiOQ=="><img src="Redes/instagram_social_network_social_media_network_communication_icon_192271.png" alt="Instagram"></a> 
+                        <a href="https://www.facebook.com/reny2001?mibextid=ZbWKwL"><img src="Redes/facebook_social_network_network_communication_internet_icon_192273.png" alt="Facebook"></a>
+                        <a href="https://www.linkedin.com/in/renyeduardoalvatinoco/"><img src="Redes/linkedin_icon-icons.com_65929.png" alt="Linkedin"></a>
+                        <a href="https://github.com/Reny2001"><img src="Redes/Github_icon-icons.com_66788.png" alt="GitHub"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Teléfono +51 920638927</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="Redes/Mi proyecto.png" alt="logo" class="proyecto">
+    </footer>
+</html>
